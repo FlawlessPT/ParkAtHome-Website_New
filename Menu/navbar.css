@@ -1,0 +1,35 @@
+:root {
+  --corPrimary: #0063a1;
+}
+
+#logo {
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+}
+
+.navbar {
+  background-color: var(--corPrimary);
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-item {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown {
+  background-color: var(--corPrimary);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}

@@ -1,0 +1,6 @@
+Register Page
+    TODO: Work on adding plates to each user
+    TODO: Change register page according to new db columns
+Profile Page
+    TODO: Enable input on edit button clicking
+    TODO: Add input when clicking add button on matriculas

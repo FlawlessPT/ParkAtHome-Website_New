@@ -26,7 +26,6 @@ function login() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      //alert(this.responseText);
       if (this.responseText == 1) {
         window.location.href = "../Inicio/index.php";
       } else {

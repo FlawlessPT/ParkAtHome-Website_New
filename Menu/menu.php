@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100" style="background-color: #0063a1;">
     <div class="container">
         <a class="navbar-brand" href="../Inicio/index.php">
-            <img src="../Imagens/IconSousa.png" id="logo" alt="parking-logo">Park@Home
+            <img src="../Imagens/logo-horizontal.svg" id="logo" style="width: 200px;" alt="parking-logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span> Menu
@@ -14,13 +14,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../Inicio/index.php#sobre">Sobre</a>
+                    <a class="nav-link" href="../Inicio/index.php#sobre">Parques</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../Inicio/index.php#download">Download</a>
-                </li>
-                <li class="nav-item" id="source">
-                    <a class="nav-link" id="source" href="../Inicio/index.php#source">Source</a>
+                    <a class="nav-link" href="../Inicio/index.php#download">Sobre</a>
                 </li>
             </ul>
             <?php
@@ -51,7 +48,7 @@
                     }
                 }
                 echo '<ul class="navbar-nav ml-auto">
-                        <li class="dropdown">
+                        <li class="dropdown" style="background-color: #0063a1;">
                             <button class="nav-link nav-item btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-user"></i> ' . $personName . '
                             </button>
@@ -64,7 +61,7 @@
                     </ul>';
             } else {
                 echo '<ul class="navbar-nav ml-auto">
-                        <li class="dropdown">
+                        <li class="dropdown" style="background-color: #0063a1;">
                             <button class="nav-link nav-item btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-user"></i> Conta
                             </button>

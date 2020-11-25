@@ -1,102 +1,69 @@
 :root {
-	--corPrimary: #0a48ad;
+  --corPrimary: #0a48ad;
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 h3 {
-	font-weight: bold;
-}
-
-#logo {
-	margin: 5px;
-	width: 35px;
-	height: 35px;
+  font-weight: bold;
 }
 
 .navbar {
-	background-color: var(--corPrimary);
-	padding-left: 16.7%;
-	font-family: 'Poppins', sans-serif;
+  background-color: var(--corPrimary);
+  padding-left: 16.7%;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-link {
-	color: white;
+  color: white;
 }
 
 .nav-item {
-	color: white;
-	font-size: 20px;
-	font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-item:hover {
-	color: white;
+  color: white;
 }
 
 .navbar-brand {
-	font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-item dropdown {
-	align-content: flex-end;
-	background-color: #0a48ad;
+  align-content: flex-end;
+  background-color: #0a48ad;
 }
 
 .dropdown-item {
-	font-family: 'Poppins', sans-serif;
-	background-color: #0a48ad;
-	color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: #0a48ad;
+  color: white;
 }
 
 .dropdown-menu {
-	background-color: #0a48ad;
+  background-color: #0a48ad;
 }
 
 .dropdown-item:hover {
-	background-color: #0a48ad;
-	color: white;
-}
-
-#linha1 {
-	border-top: 3px solid black;
-}
-
-#linha2 {
-	border-top: 3px solid black;
-}
-
-#team-me {
-	padding-left: 28%;
-	font-size: 25px;
-}
-
-#team-me2 {
-	padding-left: 34%;
-	font-size: 25px;
-}
-
-#team-me3 {
-	padding-left: 36%;
-	font-size: 25px;
-}
-
-#source {
-	padding-right: 325px;
+  background-color: #0a48ad;
+  color: white;
 }
 
 #footer {
-	padding-left: 15%;
-	margin-bottom: 0;
+  padding-left: 15%;
+  margin-bottom: 0;
 }
 
 .vl {
-	border-left: 1px solid black;
-	height: 100px;
+  border-left: 1px solid black;
+  height: 100px;
 }

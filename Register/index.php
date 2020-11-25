@@ -31,10 +31,10 @@
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
     <div class="container" style="margin-top: 100px">
-        <h3>Registar Conta: </h3>
-        <hr>
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-sm-12">
+                <h3 class="text-xl-left text-sm-center">Registar Conta: </h3>
+                <hr>
                 <div class="input-group mb-3">
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fas fa-user" id="name_icon"></i></span>
@@ -53,38 +53,6 @@
                     </div>
                     <input type="text" onchange="verificar()" name="numeroTelefone" id="numeroTelefone" class="form-control input_user" placeholder="Número Telefone*">
                 </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="far fa-id-card" id="nif_icon"></i></span>
-                    </div>
-                    <input type="text" onchange="verificar()" name="nif" id="nif" class="form-control input_user" placeholder="NIF*">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
-                    </div>
-                    <input type="text" onchange="verificar()" name="matricula1" id="matricula1" class="form-control input_pass" placeholder="Matricula 1*" maxlength="8">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="far fa-list-alt" id="mat2_icon"></i></span>
-                    </div>
-                    <input type="text" onchange="verificar()" name="matricula2" id="matricula2" class="form-control input_pass" placeholder="Matricula 2" maxlength="8">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="far fa-list-alt" id="mat3_icon"></i></span>
-                    </div>
-                    <input type="text" onchange="verificar()" name="matricula3" id="matricula3" class="form-control input_pass" placeholder="Matricula 3" maxlength="8">
-                </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-append">
-                        <span class="input-group-text"><i class="far fa-list-alt" id="mat4_icon"></i></span>
-                    </div>
-                    <input type="text" onchange="verificar()" name="matricula4" id="matricula4" class="form-control input_pass" placeholder="Matricula 4" maxlength="8">
-                </div>
-            </div>
-            <div class="col-lg-5">
                 <div class="input-group mb-3">
                     <div class="input-group-append">
                         <span class="input-group-text"><i class="fas fa-user" id="username_icon"></i></span>

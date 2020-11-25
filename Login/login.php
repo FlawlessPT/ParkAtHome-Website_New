@@ -8,7 +8,6 @@
     $pw = $_GET['password'];
 
     session_start();
-    //echo $pw;
  
     // Cria a ligação à BD
     $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -27,5 +26,3 @@
     }
  
     mysqli_close($conn);
-	
-?>

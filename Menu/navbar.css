@@ -3,9 +3,8 @@
 }
 
 #logo {
-  margin: 5px;
-  width: 35px;
-  height: 35px;
+  width: 200px;
+  height: 40px;
 }
 
 .navbar {
@@ -13,15 +12,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-.nav-link {
-  color: white;
+.nav-link:hover {
+  opacity: 0.7;
 }
 
 .nav-item {
   cursor: pointer;
   color: white;
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
 }
 
 .navbar-brand {

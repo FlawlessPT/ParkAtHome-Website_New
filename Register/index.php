@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../Imagens/IconSousa.png">
+    <link rel="icon" href="../Imagens/logo-vertical.svg">
     <title>ParkAtHome - Aplicação para Parques de Estacionamento</title>
 
     <!-- BOOTSTRAP LINKS-->
@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- OWN CSS -->
-    <link rel="stylesheet" href="../Menu/navbar.css?v=1.1">
-    <link rel="stylesheet" href="main_register.css?v=1.3">
+    <link rel="stylesheet" href="../Menu/navbar.css?v=1.0">
+    <link rel="stylesheet" href="main_register.css?v=1.0">
 
     <!-- PAGE FUNCTIONS -->
     <script src="register.js?v=1.1"></script>

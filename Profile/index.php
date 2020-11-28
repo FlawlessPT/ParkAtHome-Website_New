@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../Imagens/IconSousa.png">
+    <link rel="icon" href="../Imagens/logo-vertical.svg">
     <title>ParkAtHome - Aplicação para Parques de Estacionamento</title>
 
     <!-- BOOTSTRAP LINKS-->
@@ -21,6 +21,7 @@
 
     <!-- OWN CSS -->
     <link rel="stylesheet" href="../Menu/navbar.css?v=1.2">
+    <link rel="stylesheet" href="main_profile.css?v=1.0">
 
     <!-- PAGE FUNCTIONS -->
     <script src="profile.js"></script>

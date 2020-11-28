@@ -33,7 +33,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-sm-12">
-                <h3 class="text-xl-left text-sm-center">Registar Conta: </h3>
+                <h3 class="text-xl-left text-sm-center font-weight-bold ">Registar Conta: </h3>
                 <hr>
                 <div class="input-group mb-3">
                     <div class="input-group-append">

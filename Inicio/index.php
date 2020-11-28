@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- OWN LINKS -->
-    <link rel="stylesheet" href="../Menu/navbar.css?v=1.5">
-    <link rel="stylesheet" href="main_index.css?v=1.6">
+    <link rel="stylesheet" href="../Menu/navbar.css?v=1.0">
+    <link rel="stylesheet" href="main_index.css?v=1.0">
 </head>
 
 <body>

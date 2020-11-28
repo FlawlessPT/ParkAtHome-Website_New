@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- OWN CSS -->
-    <link rel="stylesheet" href="../Menu/navbar.css?v=1.1">
+    <link rel="stylesheet" href="../Menu/navbar.css?v=1.0">
 
     <!-- PAGE FUNCTIONS -->
 </head>
@@ -29,11 +29,11 @@
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
     <div class="container" style="margin-top: 100px">
-        <h2 class="text-center">A sua conta foi criada com sucesso!</h2>
+        <h2 class="text-center">Conta criada com sucesso!</h2>
         <hr>
         <p class="text-center">Clique no botão para ir para a página de inicio de sessão.</p>
         <div class="d-flex justify-content-center">
-            <a href="../Login/" class="btn btn-primary">Iniciar Sessão</a>
+            <a href="../Login/index.php" class="btn btn-primary">Iniciar Sessão</a>
         </div>
     </div>
     <?php include '../Footer/footer.php'; ?>

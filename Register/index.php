@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="main_register.css?v=1.0">
 
     <!-- PAGE FUNCTIONS -->
-    <script src="register.js?v=1.1"></script>
+    <script src="register.js"></script>
 </head>
 
-<body onload="esconder()">
+<body onload="hide()">
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
     <div class="container" style="margin-top: 100px">
@@ -68,13 +68,13 @@
                 <b class="d-flex justify-content-end" style="color: black">
                     * obrigatório
                 </b>
-                <b class="text-right" style="color: red; text-decoration: underline;" id="errorMessage">
+                <b class="d-flex justify-content-end" style="color: red; text-decoration: underline;" id="errorMessage">
                     Preencha todos os campos!
                 </b>
                 <div class="d-flex justify-content-end">
-                    <button class="btn bg-info mt-3" type="button" id="registerButton" onclick="inserir()">Registar</button>
+                    <button class="btn btn-primary mt-3" type="button" id="registerButton" onclick="inserir()">Registar</button>
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-right mt-3">
                     <span class="forgot-password">Já possui conta? Inicie sessão <a href="../Login/">aqui</a>.</span>
                 </div>
             </div>

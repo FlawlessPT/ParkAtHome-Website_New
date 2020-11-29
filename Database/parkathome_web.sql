@@ -7,7 +7,7 @@ CREATE TABLE users (
 	name TEXT NOT NULL,
 	username TEXT UNIQUE NOT NULL,
 	password TEXT NOT NULL,
-	phoneNumber TEXT,
+	contact TEXT,
 	email TEXT,
 	PRIMARY KEY (id)
 );

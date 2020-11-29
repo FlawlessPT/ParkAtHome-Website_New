@@ -27,7 +27,7 @@
     <script src="profile.js"></script>
 </head>
 
-<body>
+<body onload="loadProfileData();">
     <!-- MENU -->
     <?php include '../Menu/menu.php'; ?>
     <!-- CONTENT -->
@@ -60,7 +60,7 @@
                 </div>
                 <label>Password</label>
                 <div class="input-group mb-3">
-                    <input type="password" class="form-control" id="profilePassword" placeholder="Password" disabled>
+                    <input type="text" class="form-control" id="profilePassword" placeholder="Password" disabled>
                 </div>
             </div>
         </div>
@@ -68,21 +68,22 @@
             <div class="col-sm">
                 <div class="w-100">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-sm-3">
                             <h3>Matrículas: </h3>
                         </div>
-                        <div class="col-lg-6">
-                            <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i></button>
+                        <div class="col-sm-9">
+                            <button type="button" onclick="createNewPlate()" class="btn btn-primary float-right"><i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                     <hr>
-                    <label>Matricula 1:</label>
+                    <div id="platesList"></div>
+                    <!-- <label>Matricula 1:</label>
                     <div class="input-group mb-3">
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder="Matricula 1" disabled>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

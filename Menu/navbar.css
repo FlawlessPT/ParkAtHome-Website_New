@@ -1,5 +1,6 @@
 :root {
   --corPrimary: #0063a1;
+  --testeColor: #0091eb;
 }
 
 #logo {
@@ -13,7 +14,7 @@
 }
 
 .nav-link:hover {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .nav-item {

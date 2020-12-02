@@ -7,19 +7,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="../Inicio/index.php">
-                        Início
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="../Parques/index.php">Parques</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="../Sobre/index.php">Sobre</a>
-                </li>
-            </ul>
             <?php
 
             $servername = "localhost";
@@ -47,10 +34,21 @@
                         $personName = $row['name'];
                     }
                 }
-                echo '<ul class="navbar-nav ml-auto">
+                echo '<ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase" href="../Inicio/index.php">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase" href="../Parques/index.php">Parques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase" href="../Sobre/index.php">Sobre</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
                         <li class="dropdown">
-                            <button class="nav-link nav-item btn dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-user"></i> ' . $personName . '
+                            <button class="nav-link nav-item btn dropdown-toggle text-white text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ' . $personName . '
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <b class="dropdown-header" style="font-size: 15px"> ' . strtoupper($loggedUser) . '</i></b>
@@ -61,9 +59,18 @@
                     </ul>';
             } else {
                 echo '<ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase" href="../Inicio/index.php">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase" href="../Parques/index.php">Parques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-uppercase" href="../Sobre/index.php">Sobre</a>
+                        </li>
                         <li class="dropdown">
-                            <button class="nav-link nav-item btn dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-user"></i> Conta
+                            <button class="nav-link nav-item btn dropdown-toggle text-uppercase text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Conta
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="../Login/index.php">> Iniciar Sessão <i class="fas fa-sign-in-alt"></i></a>

@@ -21,10 +21,10 @@
 
     <!-- OWN CSS -->
     <link rel="stylesheet" href="../Menu/navbar.css?v=1.0">
-    <link rel="stylesheet" href="main_profile.css?v=1.0">
+    <link rel="stylesheet" href="styles.css?v=1.0">
 
     <!-- PAGE FUNCTIONS -->
-    <script src="profile.js"></script>
+    <script src="profile.js?v=1.1"></script>
 </head>
 
 <body onload="loadProfileData();">
@@ -37,7 +37,7 @@
                 <h3>Perfil: </h3>
             </div>
             <div class="col-sm-6">
-                <button type="button" class="btn btn-success float-right ml-3"><i class="fas fa-check"></i></button>
+                <button type="button" onclick="update()" class="btn btn-success float-right ml-3"><i class="fas fa-check"></i></button>
                 <button type="button" onclick="enableEdit()" class="btn btn-primary float-right"><i class="fas fa-edit"></i></button>
             </div>
         </div>
@@ -89,7 +89,7 @@
         </div>
     </div>
     <!-- FOOTER -->
-    <?php include '../Footer/footer.php'; ?>
+    <?php include '../Footer/footer2.php'; ?>
 </body>
 
 </html>

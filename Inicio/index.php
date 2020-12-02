@@ -21,7 +21,8 @@
 
     <!-- OWN LINKS -->
     <link rel="stylesheet" href="../Menu/navbar.css?v=1.2">
-    <link rel="stylesheet" href="main_index.css?v=1.3">
+    <link rel="stylesheet" href="styles.css?v=1.0">
+    <script src="inicio.js"></script>
 </head>
 
 <body>
@@ -30,101 +31,94 @@
     <br>
     <br>
     <?php include '../Menu/menu.php'; ?>
-    <section class="banner">
-        <div class="container">
-            <div class="text-center">
-                <div class="bannerContent">
-                    <h1 class="display-4">Park@Home</h1>
-                    <p style="font-size: 16pt;">Estacionar o seu automóvel nunca foi tão fácil.</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <a style="font-size: 16pt" class="btn btn-outline-light px-3 py-2 btnStartNow" href="../" role="button">Começar agora!</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include '../Banners/banner-inicio.php' ?>
     <div class="container">
         <section class="project-features mt-5">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 <div class="col-md-2">
                     <div class="feature-buttons">
-                        <button type="button" class="btn btnMain mb-3 w-100">
-                            <span class="btnText">Feature 1</span>
+                        <button type="button" class="btn btnMain mb-3 w-100" onclick="show('acessibilidade')">
+                            <span class="btnText">Acessibilidade</span>
                         </button><br>
-                        <button type="button" class="btn btnMain mb-3 w-100">
-                            <span class="btnText">Feature 2</span>
+                        <button type="button" class="btn btnMain mb-3 w-100" onclick="show('seguranca')">
+                            <span class="btnText">Segurança</span>
                         </button><br>
-                        <button type="button" class="btn btnMain mb-3 w-100">
-                            <span class="btnText">Feature 3</span>
+                        <button type="button" class="btn btnMain mb-3 w-100" onclick="show('variadade')">
+                            <span class="btnText">Variadade</span>
                         </button><br>
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <div class="feature-text mt-3">
-                        <h3>Titulo feature</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis
-                            itaque laboriosam consequuntur pariatur hic! Dicta, repellat laudantium inventore molestiae,
-                            blanditiis, vel reiciendis temporibus culpa quia assumenda quos corporis nam.</p>
+                    <div class="feature-text mt-4">
+                        <div style="visibility: visible; display: block" id="acessibilidade">
+                            <h3>Acessibilidade</h3>
+                            <p>
+                                Sabemos o quão difícil é para muitos pagar por aplicações, por isso,
+                                a nossa aplicação é totalmente grátis para que possa transferir e utilizar
+                                sem quaisqueres custos!
+                            </p>
+                        </div>
+                        <div style="visibility: hidden; display: none" id="seguranca">
+                            <h3>Segurança</h3>
+                            <p>
+                                Possuimos um dos melhores sistemas de segurança online, para que
+                                todos os seus dados e informações sejam todos guardados em segurança!
+                            </p>
+                        </div>
+                        <div style="visibility: hidden; display: none" id="variadade">
+                            <h3>Variadade</h3>
+                            <p>
+                                Queremos fazer chegar a nossa aplicação ao maior número de pessoas, por isso,
+                                um dos principais pontos seria disponibilizar a aplicação tanto para dispositivos Android como iOS.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="project-faqs mt-5">
-            <div class="row">
-                <div class="col-md-6" style="margin-left: 25%; margin-right: 25%">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
                     <h3>FAQs</h3>
                     <hr class="border-dark">
-                    <div class="row">
-                        <div class="col-sm">
-                            <h5 class="faq-title pt-2">FAQ 1</h5>
-                        </div>
-                        <div class="col-sm">
-                            <button type="button" class="btn float-right"><i class="fas fa-plus"></i></button>
-                        </div>
+                    <h5 class="faq-title pt-2">
+                        Quando surgiu esta ideia?
+                        <button type="button" class="btn float-right" data-toggle="collapse" data-target="#faq-response1" aria-expanded="false" aria-controls="faq-response1"><i class="fas fa-plus"></i></button>
+                    </h5>
+                    <div class="collapse" id="faq-response1">
+                        <p class="faq-text">
+                            Esta ideia surgiu no ano 2018, no meu 12º ano, onde tive que fazer um projeto para o final do ano
+                            e surgindo-me assim esta ideia. Porém, agora, voltei com a mesma, porém numa versão melhorada.
+                        </p>
                     </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <p class="faq-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
+                    <h5 class="faq-title pt-2">
+                        Com quem trabalhamos?
+                        <button type="button" class="btn float-right" data-toggle="collapse" data-target="#faq-response2" aria-expanded="false" aria-controls="faq-response2"><i class="fas fa-plus"></i></button>
+                    </h5>
+                    <div class="collapse" id="faq-response2">
+                        <p class="faq-text">
+                            Trabalhamos com qualquer empresa que se queira afiliar a nós! Logo que tenha um
+                            parque de estacionamento, nós ajudamos!
+                        </p>
                     </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <h5 class="faq-title pt-2">FAQ 2</h5>
-                        </div>
-                        <div class="col-sm">
-                            <button type="button" class="btn float-right"><i class="fas fa-plus"></i></button>
-                        </div>
+                    <h5 class="faq-title pt-2">
+                        Onde nos encontrar?
+                        <button type="button" class="btn float-right" data-toggle="collapse" data-target="#faq-response3" aria-expanded="false" aria-controls="faq-response3"><i class="fas fa-plus"></i></button>
+                    </h5>
+                    <div class="collapse" id="faq-response3">
+                        <p class="faq-text">
+                            Somos uma empresa remota na zona do Porto, mais precisamente, Gondomar.
+                        </p>
                     </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <p class="faq-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <h5 class="faq-title pt-2">FAQ 3</h5>
-                        </div>
-                        <div class="col-sm">
-                            <button type="button" class="btn float-right"><i class="fas fa-plus"></i></button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <p class="faq-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <h5 class="faq-title pt-2">FAQ 4</h5>
-                        </div>
-                        <div class="col-sm">
-                            <button type="button" class="btn float-right"><i class="fas fa-plus"></i></button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <p class="faq-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
+                    <h5 class="faq-title pt-2">
+                        A aplicação está disponível para onde?
+                        <button type="button" class="btn float-right" data-toggle="collapse" data-target="#faq-response4" aria-expanded="false" aria-controls="faq-response4"><i class="fas fa-plus"></i></button>
+                    </h5>
+                    <div class="collapse" id="faq-response4">
+                        <p class="faq-text">
+                            A aplicação foi desenvolvida para dispositivos Android e iOS. Portanto,
+                            podem nos encontrar em ambas as lojas de aplicações. App Store e Play Store.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -133,9 +127,10 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6">
                     <center>
-                        <img src="../Imagens/Icon/SVG/icon-border.svg" width="150" alt="icon" />
+                        <img class="rounded-circle" src="../Imagens/me.jpg" width="250" alt="icon" />
                     </center>
                     <hr class="border-dark">
+                    <h4 class="text-center">João Sousa</h4>
                     <p class="text-center">Project <b>Founder</b> and <b>CEO</b></p>
                 </div>
             </div>

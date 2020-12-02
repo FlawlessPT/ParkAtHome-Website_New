@@ -107,3 +107,5 @@ function getPassword($conn)
 
     return $password;
 }
+
+mysqli_close($conn);

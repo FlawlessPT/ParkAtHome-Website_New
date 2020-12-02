@@ -12,7 +12,7 @@ CREATE TABLE users (
 	PRIMARY KEY (id)
 );
 
-CREATE TABLE park (
+CREATE TABLE parks (
 	id int NOT NULL AUTO_INCREMENT,
 	name text NOT NULL,
 	totalSpaces int NOT NULL,

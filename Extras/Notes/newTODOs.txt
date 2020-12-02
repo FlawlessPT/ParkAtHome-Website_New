@@ -3,8 +3,14 @@ Register Page
 Profile Page
     SOLVED: Enable input on edit button clicking
     SOLVED: Add input when clicking add button on matriculas
-    TODO: Load plates on page load
-        TODO: List
-            TODO: Load inputs from PHP or from JS
-        TODO: Edit
-            TODO: Enable inputs
+    SOLVED: Load plates on page load
+        SOLVED: List
+            SOLVED: Load inputs from PHP or from JS
+        SOLVED: Edit
+            SOLVED: Enable inputs
+    TODO: Edit
+        TODO: Update User Data
+        TODO: Update User plates
+    TODO: Parks
+        TODO: Create park info page
+        TODO: Redirect to park information on park list click

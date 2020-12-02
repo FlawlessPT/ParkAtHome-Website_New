@@ -1,0 +1,44 @@
+:root {
+  --corPrimary: #0063a1;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btnText {
+  color: white;
+}
+
+.btnText:hover {
+  color: white;
+  opacity: 0.4;
+}
+
+.btnStartNow:hover {
+  background-color: var(--corPrimary);
+  color: white;
+}
+
+.bannerContent {
+  color: white;
+  padding-top: 25%;
+  z-index: 2;
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  background-color: var(--testeColor);
+  /* background: url("../Imagens/banner.png"); */
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: -6px;
+}
+
+.banner:before {
+  z-index: 1;
+  position: absolute;
+  opacity: 0.6;
+}

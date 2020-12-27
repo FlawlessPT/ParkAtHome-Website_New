@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- OWN CSS -->
-    <link rel="stylesheet" href="../Menu/navbar.css?v=1.0">
+    <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.0">
     <link rel="stylesheet" href="main_register.css?v=1.0">
 
     <!-- PAGE FUNCTIONS -->
@@ -29,7 +29,7 @@
 
 <body onload="hide()">
     <!-- MENU -->
-    <?php include '../Menu/menu.php'; ?>
+    <?php include '../../Includes/Menu/menu.php'; ?>
     <div class="container" style="margin-top: 100px">
         <div class="row">
             <div class="col-sm-12">
@@ -80,7 +80,7 @@
             </div>
         </div>
     </div>
-    <?php include '../Footer/footer.php'; ?>
+    <?php include '../../Includes/Footer/footer.php'; ?>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt">
 
 <head>
@@ -20,36 +20,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- OWN LINKS -->
-    <link rel="stylesheet" href="../Menu/navbar.css?v=1.0">
-    <link rel="stylesheet" href="styles.css?v=1.2">
+    <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.2">
+    <link rel="stylesheet" href="styles.css?v=1.5">
+    <script src="parques.js"></script>
 </head>
 
-<body>
+<body onload="loadParks()">
     <!-- MENU -->
     <br>
     <br>
     <br>
-    <?php include '../Menu/menu.php'; ?>
-    <?php include '../Banners/banner-sobre.php' ?>
-    <div class="container">
-        <h1 class="mt-5">Sobre</h1>
-        <p>Park@Home é uma aplicação para parques de estacionamento com o objetivo de ajudar, não só os gestores dos parque a
-            organizarem melhor os seus parques de estacionamento, mas também para ajudar as pessoas que frequentam os mesmos,
-            dando a possibilidade da pessoa efetuar a reserva de uma vaga a partir do telemóvel, pounpando assim tempo e dinheiro.
-        </p>
-        <hr class="border-dark">
-        <h1>Contactos</h1>
-        <p>Email: geral@parkathome.pt</p>
-        <p>Telefone: 999888777</p>
-        <hr class="border-dark">
-        <h1>Desenvolvido por:</h1>
-        <p>João Sousa</p>
-        <p>Email: joao.sousa.50044@my.istec.pt</p>
-        <p>Contacto: 999888000</p>
-        <p>Mais sobre mim: <a href="https://linktr.ee/flawlessyasuo">Aqui</a></p>
-        <hr class="border-dark">
-    </div>
-    <?php include '../Footer/footer2.php'; ?>
+    <?php include '../../Includes/Menu/menu.php'; ?>
+    <?php include '../../Includes/Banners/banner-inicio.php' ?>
+    <section class="parks-list mt-5">
+        <div class="container">
+            <h1>Lista Parques</h1>
+            <div id="parks"></div>
+        </div>
+    </section>
+    <?php include '../../Includes/Footer/footer2.php'; ?>
 </body>
 
 </html>

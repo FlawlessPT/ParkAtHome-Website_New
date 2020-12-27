@@ -1,0 +1,4 @@
+- Edit exec.bat file
+- Change path to own xampp path
+- Save File
+- Execute File

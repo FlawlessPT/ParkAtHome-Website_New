@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- OWN CSS -->
-    <link rel="stylesheet" href="../Menu/navbar.css?v=1.0">
+    <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.0">
     <link rel="stylesheet" href="styles.css?v=1.0">
 
     <!-- PAGE FUNCTIONS -->
@@ -29,7 +29,7 @@
 
 <body onload="loadProfileData();">
     <!-- MENU -->
-    <?php include '../Menu/menu.php'; ?>
+    <?php include '../../Includes/Menu/menu.php'; ?>
     <!-- CONTENT -->
     <div class="container" style="margin-top: 100px;">
         <div class="row">
@@ -89,7 +89,7 @@
         </div>
     </div>
     <!-- FOOTER -->
-    <?php include '../Footer/footer2.php'; ?>
+    <?php include '../../Includes/Footer/footer2.php'; ?>
 </body>
 
 </html>

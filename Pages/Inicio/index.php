@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- OWN LINKS -->
-    <link rel="stylesheet" href="../Menu/navbar.css?v=1.2">
+    <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.2">
     <link rel="stylesheet" href="styles.css?v=1.0">
     <script src="inicio.js"></script>
 </head>
@@ -30,8 +30,8 @@
     <br>
     <br>
     <br>
-    <?php include '../Menu/menu.php'; ?>
-    <?php include '../Banners/banner-inicio.php' ?>
+    <?php include '../../Includes/Menu/menu.php'; ?>
+    <?php include '../../Includes/Banners/banner-inicio.php' ?>
     <div class="container">
         <section class="project-features mt-5">
             <div class="row d-flex justify-content-center">
@@ -127,7 +127,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6">
                     <center>
-                        <img class="rounded-circle" src="../Imagens/me.jpg" width="250" alt="icon" />
+                        <img class="rounded-circle" src="../../Assets/me.jpg" width="250" alt="icon" />
                     </center>
                     <hr class="border-dark">
                     <h4 class="text-center">João Sousa</h4>
@@ -136,7 +136,7 @@
             </div>
         </section>
     </div>
-    <?php include '../Footer/footer2.php'; ?>
+    <?php include '../../Includes/Footer/footer2.php'; ?>
 </body>
 
 </html>

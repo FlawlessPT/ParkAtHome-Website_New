@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- OWN LINKS -->
-    <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.2">
+    <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.3">
     <link rel="stylesheet" href="styles.css?v=1.5">
     <script src="parques.js"></script>
 </head>
@@ -31,7 +31,7 @@
     <br>
     <br>
     <?php include '../../Includes/Menu/menu.php'; ?>
-    <?php include '../../Includes/Banners/banner-inicio.php' ?>
+    <?php include '../../Includes/Banners/banner-parques.php' ?>
     <section class="parks-list mt-5">
         <div class="container">
             <h1>Lista Parques</h1>

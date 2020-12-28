@@ -3,5 +3,4 @@ session_start();
 session_destroy();
 session_abort();
 
-header("Location: ../Login/");
-?>
+header("Location: ../Pages/Login/");

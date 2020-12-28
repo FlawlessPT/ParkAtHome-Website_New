@@ -4,13 +4,12 @@
 }
 
 #logo {
-  width: 200px;
-  height: 40px;
+  height: 45px;
 }
 
 .navbar {
   background-color: var(--corPrimary);
-  font-family: "Poppins", sans-serif;
+  font-family: "Aldrich";
 }
 
 .nav-link:hover {
@@ -21,10 +20,6 @@
   cursor: pointer;
   color: white;
   font-size: 20px;
-}
-
-.navbar-brand {
-  font-family: "Poppins", sans-serif;
 }
 
 .dropdown {

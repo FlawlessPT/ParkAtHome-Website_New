@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100">
     <div class="container">
         <a class="navbar-brand" href="../Inicio/index.php">
-            <img src="../../Assets/Logo/Normal/SVG/logo-horizontal.svg" id="logo" alt="parking-logo">
+            <img src="../../Assets/Icon/PNG/icon-solid.png" id="logo" alt="parking-logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <b class="dropdown-header" style="font-size: 15px"> ' . strtoupper($loggedUser) . '</i></b>
                                 <a class="dropdown-item" href="../Profile/index.php">> Perfil <i class="fas fa-user"></i></a>
-                                <a class="dropdown-item" href="../Utils/logout.php">> Sair <i class="fas fa-sign-out-alt"></i></a>
+                                <a class="dropdown-item" href="../../Utils/logout.php">> Sair <i class="fas fa-sign-out-alt"></i></a>
                             </div>
                         </li>
                     </ul>';

@@ -52,8 +52,8 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <b class="dropdown-header" style="font-size: 15px"> ' . strtoupper($loggedUser) . '</i></b>
-                                <a class="dropdown-item" href="../Profile/index.php">> Perfil <i class="fas fa-user"></i></a>
-                                <a class="dropdown-item" href="../../Utils/logout.php">> Sair <i class="fas fa-sign-out-alt"></i></a>
+                                <a class="dropdown-item" href="../Profile/index.php">Perfil<i class="fas fa-user"></i></a>
+                                <a class="dropdown-item" href="../../Utils/logout.php">Sair<i class="fas fa-sign-out-alt"></i></a>
                             </div>
                         </li>
                     </ul>';
@@ -73,8 +73,8 @@
                                 Conta
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="../Login/index.php">> Iniciar Sessão <i class="fas fa-sign-in-alt"></i></a>
-                                <a class="dropdown-item" href="../Register/index.php">> Registar Conta <i class="fas fa-plus"></i></a>
+                                <a class="dropdown-item" href="../Login/index.php">Iniciar Sessão<i class="fas fa-sign-in-alt"></i></a>
+                                <a class="dropdown-item" href="../Register/index.php">Registar Conta<i class="fas fa-plus"></i></a>
                             </div>
                         </li>
                     </ul>';

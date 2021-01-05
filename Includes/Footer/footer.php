@@ -7,7 +7,7 @@
             </div>
             <div class="col-xl-5 my-auto text-xl-left text-sm-center">
                 <h4 class="mt-sm-3 ml-xl-n2 font-weight-bold">Park@Home</h4>
-                <h6 class="ml-xl-n2">© 2020 Park@Home, Todos os direitos reservados.</h6>
+                <h6 class="ml-xl-n2">© 2021 Park@Home, Todos os direitos reservados.</h6>
             </div>
             <div class="col-sm-5 d-flex align-items-xl-center">
                 <button type="button" class="btn flex-fill h-50"><i class="fab fa-linkedin" style="font-size: 25pt; color: white" aria-hidden="true"></i></button>

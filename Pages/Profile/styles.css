@@ -2,6 +2,10 @@
   --corPrimary: #0063a1;
 }
 
+body {
+  font-family: "Aldrich", sans-serif;
+}
+
 #name_icon {
   width: 20px;
 }

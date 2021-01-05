@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Aldrich", sans-serif;
 }
 
 .btnText {
@@ -30,7 +30,7 @@ body {
 .banner {
   position: relative;
   background-color: var(--testeColor);
-  /* background: url("../Imagens/banner.png"); */
+  background: url("../../Assets/parque_estacionamento.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;

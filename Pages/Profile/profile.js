@@ -51,6 +51,7 @@ function loadProfileData() {
 }
 
 var count = 0;
+//TODO: LOAD ALL INPUTS BY DEFAULT
 
 function setTotalPlates() {
   var xhttp = new XMLHttpRequest();

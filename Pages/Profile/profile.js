@@ -85,14 +85,20 @@ function update() {
   var password = document.getElementById("profilePassword").value;
 
   var plates = new Array();
-
-  for (var i = 1; i <= count; i++) {
-    plates[i] = document.getElementById("plate" + i).value;
-  }
+  plates[0] = document.getElementById("plate1").value;
+  plates[1] = document.getElementById("plate2").value;
+  plates[2] = document.getElementById("plate3").value;
+  plates[3] = document.getElementById("plate4").value;
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
+      if (this.responseText == 1) {
+        alert("Funfou");
+      }
+      else {
+        alert("Erro");
+      }
     }
   };
   xhttp.open(
@@ -104,7 +110,15 @@ function update() {
     "&contact=" +
     contact +
     "&password=" +
-    password,
+    password +
+    "&plate1=" +
+    plates[0] +
+    "&plate2=" +
+    plates[1] +
+    "&plate3=" +
+    plates[2] +
+    "&plate4=" +
+    plates[3],
     true
   );
   xhttp.send();

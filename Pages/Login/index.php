@@ -21,7 +21,7 @@
 
     <!-- OWN CSS -->
     <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.2">
-    <link rel="stylesheet" href="styles.css?v=1.0">
+    <link rel="stylesheet" href="styles.css?v=1.1">
 
     <!-- PAGE FUNCTIONS -->
     <script src="login.js?v=1.1"></script>

@@ -21,7 +21,7 @@
 
     <!-- OWN LINKS -->
     <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.4">
-    <link rel="stylesheet" href="styles.css?v=1.6">
+    <link rel="stylesheet" href="styles.css?v=1.7">
     <script src="parques.js"></script>
 </head>
 

@@ -21,7 +21,7 @@
 
     <!-- OWN LINKS -->
     <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.2">
-    <link rel="stylesheet" href="styles.css?v=1.3">
+    <link rel="stylesheet" href="styles.css?v=1.4">
 </head>
 
 <body>

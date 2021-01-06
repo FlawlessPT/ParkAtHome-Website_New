@@ -21,7 +21,7 @@
 
     <!-- OWN CSS -->
     <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.2" />>
-    <link rel="stylesheet" href="styles.css?v=1.0">
+    <link rel="stylesheet" href="styles.css?v=1.1">
 
     <!-- PAGE FUNCTIONS -->
     <script src="profile.js?v=1.1"></script>
@@ -68,22 +68,39 @@
             <div class="col-sm">
                 <div class="w-100">
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-12">
                             <h3>Matrículas: </h3>
-                        </div>
-                        <div class="col-sm-9">
-                            <button type="button" onclick="createNewPlate()" class="btn btn-primary float-right"><i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                     <hr>
-                    <div id="platesList"></div>
-                    <!-- <label>Matricula 1:</label>
+                    <label for="plate1">Matricula 1:</label>
                     <div class="input-group mb-3">
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Matricula 1" disabled>
-                    </div> -->
+                        <input type="text" id="plate1" class="form-control" placeholder="Matricula 1" disabled>
+                    </div>
+                    <label for="plate2">Matricula 2:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
+                        </div>
+                        <input type="text" id="plate2" class="form-control" placeholder="Matricula 2" disabled>
+                    </div>
+                    <label for="plate3">Matricula 3:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
+                        </div>
+                        <input type="text" id="plate3" class="form-control" placeholder="Matricula 3" disabled>
+                    </div>
+                    <label for="plate4">Matricula 4:</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="far fa-list-alt" id="mat1_icon"></i></span>
+                        </div>
+                        <input type="text" id="plate4" class="form-control" placeholder="Matricula 4" disabled>
+                    </div>
                 </div>
             </div>
         </div>

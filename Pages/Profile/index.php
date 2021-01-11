@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles.css?v=1.1">
 
     <!-- PAGE FUNCTIONS -->
-    <script src="profile.js?v=1.1"></script>
+    <script src="profile.js?v=1.2"></script>
 </head>
 
 <body onload="loadProfileData();">

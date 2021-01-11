@@ -97,7 +97,7 @@ function update() {
         alert("Funfou");
       }
       else {
-        alert("Erro");
+        alert(this.responseText);
       }
     }
   };

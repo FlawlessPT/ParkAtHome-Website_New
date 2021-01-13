@@ -24,117 +24,111 @@ $plate2 = $_GET['plate2'];
 $plate3 = $_GET['plate3'];
 $plate4 = $_GET['plate4'];
 
-// echo $plate3;
-
 $queryUser = "UPDATE users
           SET name = '$name', password = '$password', contact = '$contact', email = '$email'
           WHERE username='$username'";
 
 $resultUser = mysqli_query($conn, $queryUser);
 
-if ($resultUser && updateVehicule1($conn, $plate1)) {
+if ($resultUser && updateVehicule1($conn, $plate1, $username) && updateVehicule2($conn, $plate2, $username) && updateVehicule3($conn, $plate3, $username) && updateVehicule4($conn, $plate4, $username)) {
     if (mysqli_affected_rows($conn) > 0) {
         echo true;
     } else {
-        echo "Errou 2";
+        echo "Erro";
     }
 } else {
-    echo "Erro 1";
+    echo "Erro";
 }
 
-function updateVehicule1($conn, $plate1)
+function updateVehicule1($conn, $plate1, $username)
 {
-    $updated = false;
+    $updated = true;
 
-    $idPlate1 = getVehiculeIdByPlateName($conn, $plate1);
+    $oldPlate = getOldPlate($conn, 1, $username);
 
-    if ($plate1 != "---") {
-        echo $idPlate1;
-        $queryVehicules1 = "UPDATE vehicules
+    $idPlate1 = getVehiculeIdByPlateName($conn, $oldPlate);
+
+    $queryVehicules1 = "UPDATE vehicules
           SET plate = '$plate1'
           WHERE id=$idPlate1";
 
-        $resultVehicules1 = mysqli_query($conn, $queryVehicules1);
-
-        if ($resultVehicules1) {
-            if (mysqli_affected_rows($conn) > 0) {
-                $updated = true;
-            } else {
-                $updated = false;
-            }
-        } else {
-            $updated = false;
-        }
-    }
+    $resultVehicules1 = mysqli_query($conn, $queryVehicules1);
 
     return $updated;
 }
 
-function updateVehicule2($conn, $plate2)
+function updateVehicule2($conn, $plate2, $username)
 {
-    $updated = false;
+    $updated = true;
 
-    $idPlate2 = getVehiculeIdByPlateName($conn, $plate2);
+    $oldPlate = getOldPlate($conn, 2, $username);
 
-    if ($plate2 != "---") {
-        $queryVehicules2 = "UPDATE vehicules
+    $idPlate2 = getVehiculeIdByPlateName($conn, $oldPlate);
+
+    $queryVehicules2 = "UPDATE vehicules
           SET plate = '$plate2'
           WHERE id=$idPlate2";
 
-        $resultVehicules2 = mysqli_query($conn, $queryVehicules2);
-
-        if ($resultVehicules2) {
-            $updated = true;
-        } else {
-            $updated = false;
-        }
-    }
+    $resultVehicules2 = mysqli_query($conn, $queryVehicules2);
 
     return $updated;
 }
 
-function updateVehicule3($conn, $plate3)
+function updateVehicule3($conn, $plate3, $username)
 {
-    $updated = false;
+    $updated = true;
 
-    $idPlate3 = getVehiculeIdByPlateName($conn, $plate3);
+    $oldPlate = getOldPlate($conn, 3, $username);
 
-    if ($plate3 != "---") {
-        $queryVehicules3 = "UPDATE vehicules
+    $idPlate3 = getVehiculeIdByPlateName($conn, $oldPlate);
+
+    $queryVehicules3 = "UPDATE vehicules
           SET plate = '$plate3'
           WHERE id=$idPlate3";
-        $resultVehicules3 = mysqli_query($conn, $queryVehicules3);
-
-        if ($resultVehicules3) {
-            $updated = true;
-        } else {
-            $updated = false;
-        }
-    }
+    $resultVehicules3 = mysqli_query($conn, $queryVehicules3);
 
     return $updated;
 }
 
-function updateVehicule4($conn, $plate4)
+function updateVehicule4($conn, $plate4, $username)
 {
-    $updated = false;
+    $updated = true;
 
-    $idPlate4 = getVehiculeIdByPlateName($conn, $plate4);
+    $oldPlate = getOldPlate($conn, 4, $username);
 
-    if ($plate4 != "---") {
-        $queryVehicules4 = "UPDATE vehicules
+    $idPlate4 = getVehiculeIdByPlateName($conn, $oldPlate);
+
+    $queryVehicules4 = "UPDATE vehicules
           SET plate = '$plate4'
           WHERE id=$idPlate4";
-        $resultVehicules4 = mysqli_query($conn, $queryVehicules4);
+    $resultVehicules4 = mysqli_query($conn, $queryVehicules4);
 
-        if ($resultVehicules4) {
-            $updated = true;
-        } else {
-            $updated = false;
+    return $updated;
+}
+
+function getOldPlate($conn, $position, $username)
+{
+    $oldPlate = "";
+
+    $idUser = getUserId($conn, $username);
+
+    $count = 1;
+
+    $queryOldPlate = "SELECT plate FROM vehicules WHERE idUser=$idUser";
+    $resultOldPlate = mysqli_query($conn, $queryOldPlate);
+
+    if ($resultOldPlate) {
+        while ($row = mysqli_fetch_assoc($resultOldPlate)) {
+            if ($count == $position) {
+                $oldPlate = $row["plate"];
+                break;
+            }
+
+            $count++;
         }
     }
 
-    return $updated;
+    return $oldPlate;
 }
 
 function getVehiculeIdByPlateName($conn, $plate)
@@ -153,6 +147,24 @@ function getVehiculeIdByPlateName($conn, $plate)
     }
 
     return $id;
+}
+
+function getUserId($conn, $username)
+{
+    $idUser = 0;
+
+    $queryIdUser = "SELECT id FROM users WHERE username='$username'";
+    $resultIdUser = mysqli_query($conn, $queryIdUser);
+
+    if ($resultIdUser) {
+        if (mysqli_num_rows($resultIdUser) > 0) {
+            if ($row = mysqli_fetch_assoc($resultIdUser)) {
+                $idUser = $row["id"];
+            }
+        }
+    }
+
+    return $idUser;
 }
 
 mysqli_close($conn);

@@ -18,7 +18,7 @@ if (!$conn) {
 }
 
 $sql = "INSERT INTO users (name, username, password, contact, email)
-        VALUES ('$name', '$nomeUtilizador', '$pw', '$contact', '$email')";
+        VALUES ('$name', '$nomeUtilizador', '" . md5($pw) . "', '$contact', '$email')";
 
 if (mysqli_query($conn, $sql)) {
     echo true;

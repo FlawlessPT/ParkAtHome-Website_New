@@ -24,7 +24,7 @@ CREATE TABLE parks (
 CREATE TABLE vehicules (
 	id int NOT NULL AUTO_INCREMENT,
 	name text NOT NULL,
-	plate text UNIQUE NOT NULL,
+	plate text NOT NULL,
 	state BOOLEAN NOT NULL,
 	idUser int NOT NULL,
 	PRIMARY KEY(id),

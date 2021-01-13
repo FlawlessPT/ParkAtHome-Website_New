@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 02-Dez-2020 às 01:37
--- Versão do servidor: 10.4.14-MariaDB
--- versão do PHP: 7.4.11
+-- Tempo de geração: 13-Jan-2021 às 16:52
+-- Versão do servidor: 10.4.17-MariaDB
+-- versão do PHP: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -78,7 +78,7 @@ INSERT INTO `users` (`id`, `name`, `username`, `password`, `contact`, `email`) V
 CREATE TABLE `vehicules` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL,
-  `plate` text NOT NULL,
+  `plate` text NOT NULL DEFAULT '---',
   `state` tinyint(1) NOT NULL,
   `idUser` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -89,9 +89,9 @@ CREATE TABLE `vehicules` (
 
 INSERT INTO `vehicules` (`id`, `name`, `plate`, `state`, `idUser`) VALUES
 (1, 'asd', '11-11-11', 1, 1),
-(2, 'asdasd', '22-11-33', 1, 1),
-(4, 'asdas', '11-44-33', 1, 1),
-(5, 'plate 1', '11-44-55', 1, 1);
+(2, 'asdasd', '29-01-MT', 1, 1),
+(3, 'asdas', '88-AB-23', 1, 1),
+(4, 'plate 1', '', 1, 1);
 
 --
 -- Índices para tabelas despejadas
@@ -115,7 +115,6 @@ ALTER TABLE `users`
 --
 ALTER TABLE `vehicules`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `plate` (`plate`) USING HASH,
   ADD KEY `idUser` (`idUser`);
 
 --
@@ -138,7 +137,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `vehicules`
 --
 ALTER TABLE `vehicules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restrições para despejos de tabelas

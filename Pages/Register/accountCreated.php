@@ -20,14 +20,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- OWN CSS -->
-    <link rel="stylesheet" href="../Menu/navbar.css?v=1.0">
+    <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.2" />>
+    <link rel="stylesheet" href="styles.css?v=1.1">
 
     <!-- PAGE FUNCTIONS -->
+    <script src="profile.js?v=1.2"></script>
 </head>
 
 <body>
     <!-- MENU -->
-    <?php include '../Menu/menu.php'; ?>
+    <?php include '../../Includes/Menu/menu.php'; ?>
     <div class="container" style="margin-top: 100px">
         <h2 class="text-center">Conta criada com sucesso!</h2>
         <hr>
@@ -36,7 +38,7 @@
             <a href="../Login/index.php" class="btn btn-primary">Iniciar Sessão</a>
         </div>
     </div>
-    <?php include '../Footer/footer.php'; ?>
+    <?php include '../../Includes/Footer/footer.php'; ?>
 </body>
 
 </html>

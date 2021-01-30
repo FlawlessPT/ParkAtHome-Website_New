@@ -16,7 +16,7 @@ session_start();
 $username = $_SESSION["userName"];
 $idUser = getUserId($conn, $username);
 
-$query = "SELECT * FROM vehicules WHERE idUser=$idUser";
+$query = "SELECT * FROM plates WHERE idUser=$idUser";
 $result = mysqli_query($conn, $query);
 
 $response = array();

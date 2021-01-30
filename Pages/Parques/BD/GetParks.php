@@ -11,7 +11,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$query = "SELECT * FROM park";
+$query = "SELECT * FROM parks";
 $result = mysqli_query($conn, $query);
 
 if ($result) {

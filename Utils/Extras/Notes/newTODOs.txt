@@ -8,9 +8,6 @@ Profile Page
             SOLVED: Load inputs from PHP or from JS
         SOLVED: Edit
             SOLVED: Enable inputs
-    TODO: Edit
-        TODO: Update User Data
-        TODO: Update User plates
-    TODO: Parks
-        TODO: Create park info page
-        TODO: Redirect to park information on park list click
+    SOLVED: Edit
+        SOLVED: Update User Data
+        SOLVED: Update User plates

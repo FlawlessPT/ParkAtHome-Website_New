@@ -49,21 +49,8 @@ function loadProfileData() {
     setPassword();
     loadPlates();
 }
-//TODO: LOAD ALL INPUTS BY DEFAULT
-
-function setTotalPlates() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            count = this.responseText;
-        }
-    };
-    xhttp.open("GET", "BD/GetTotalPlates.php", true);
-    xhttp.send();
-}
 
 function loadPlates() {
-    setTotalPlates();
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -124,10 +111,7 @@ function update() {
     xhttp.send();
 }
 
-var isEditing = false;
-
 function enableEdit() {
-    isEditing = true;
     document.getElementById("profileName").disabled = false;
     document.getElementById("profileEmail").disabled = false;
     document.getElementById("profileContact").disabled = false;

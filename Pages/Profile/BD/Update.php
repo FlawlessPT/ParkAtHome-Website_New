@@ -44,7 +44,7 @@ function updateVehicule1($conn, $plate1, $username)
 
     $idPlate1 = getVehiculeIdByPlateName($conn, $oldPlate);
 
-    $queryVehicules1 = "UPDATE vehicules
+    $queryVehicules1 = "UPDATE plates
           SET plate = '$plate1'
           WHERE id=$idPlate1";
 
@@ -61,7 +61,7 @@ function updateVehicule2($conn, $plate2, $username)
 
     $idPlate2 = getVehiculeIdByPlateName($conn, $oldPlate);
 
-    $queryVehicules2 = "UPDATE vehicules
+    $queryVehicules2 = "UPDATE plates
           SET plate = '$plate2'
           WHERE id=$idPlate2";
 
@@ -78,7 +78,7 @@ function updateVehicule3($conn, $plate3, $username)
 
     $idPlate3 = getVehiculeIdByPlateName($conn, $oldPlate);
 
-    $queryVehicules3 = "UPDATE vehicules
+    $queryVehicules3 = "UPDATE plates
           SET plate = '$plate3'
           WHERE id=$idPlate3";
     $resultVehicules3 = mysqli_query($conn, $queryVehicules3);
@@ -94,7 +94,7 @@ function updateVehicule4($conn, $plate4, $username)
 
     $idPlate4 = getVehiculeIdByPlateName($conn, $oldPlate);
 
-    $queryVehicules4 = "UPDATE vehicules
+    $queryVehicules4 = "UPDATE plates
           SET plate = '$plate4'
           WHERE id=$idPlate4";
     $resultVehicules4 = mysqli_query($conn, $queryVehicules4);
@@ -110,7 +110,7 @@ function getOldPlate($conn, $position, $username)
 
     $count = 1;
 
-    $queryOldPlate = "SELECT plate FROM vehicules WHERE idUser=$idUser";
+    $queryOldPlate = "SELECT plate FROM plates WHERE idUser=$idUser";
     $resultOldPlate = mysqli_query($conn, $queryOldPlate);
 
     if ($resultOldPlate) {
@@ -131,7 +131,7 @@ function getVehiculeIdByPlateName($conn, $plate)
 {
     $id = 0;
 
-    $query = "SELECT id FROM vehicules WHERE plate='$plate'";
+    $query = "SELECT id FROM plates WHERE plate='$plate'";
     $result = mysqli_query($conn, $query);
 
     if ($result) {

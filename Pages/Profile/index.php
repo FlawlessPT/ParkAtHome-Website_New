@@ -19,6 +19,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="../../Includes/QuantumAlert/minfile/quantumalert.css" />
+    <script src="../../Includes/QuantumAlert/minfile/quantumalert.js"></script>
+
     <!-- OWN CSS -->
     <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.2" />>
     <link rel="stylesheet" href="styles.css?v=1.1">
@@ -60,7 +63,7 @@
                 </div>
                 <label>Password</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="profilePassword" placeholder="Password" disabled>
+                    <input type="password" class="form-control" id="profilePassword" placeholder="Password" disabled>
                 </div>
             </div>
         </div>

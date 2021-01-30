@@ -29,7 +29,7 @@ function login() {
       if (this.responseText == 1) {
         window.location.href = "../Inicio/index.php";
       } else {
-        alert("Credenciais não encontradas!");
+        Qual.warningd('Aviso', 'Credenciais não encontradas!');
       }
       username = "";
       password = "";

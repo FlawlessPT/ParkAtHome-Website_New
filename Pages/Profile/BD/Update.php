@@ -31,13 +31,9 @@ $queryUser = "UPDATE users
 $resultUser = mysqli_query($conn, $queryUser);
 
 if ($resultUser && updateVehicule1($conn, $plate1, $username) && updateVehicule2($conn, $plate2, $username) && updateVehicule3($conn, $plate3, $username) && updateVehicule4($conn, $plate4, $username)) {
-    if (mysqli_affected_rows($conn) > 0) {
-        echo true;
-    } else {
-        echo "Erro";
-    }
+    echo true;
 } else {
-    echo "Erro";
+    echo false;
 }
 
 function updateVehicule1($conn, $plate1, $username)

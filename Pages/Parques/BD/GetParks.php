@@ -22,15 +22,15 @@ if ($result) {
             $id = $row["id"];
 
             echo '<div class="row mt-5" id="' . $id . '">
-            <div class="col-sm-10">
-                <h4>' . $name . '</h4>
-                <p>' . $localization . ' </p>
-            </div>
-            <div class="col-sm-2">
-                <button class="btn arrowBigger float-right"><i id="' . $id . '" style="font-size: 20pt" class="fas fa-angle-right mt-3"></i></button>
-            </div>
-        </div>
-        <hr class="mt-0 border-dark">';
+                    <div class="col-sm-10">
+                        <h4>' . $name . '</h4>
+                        <p>' . $localization . ' </p>
+                    </div>
+                </div>
+                <hr class="mt-0 border-dark">';
+            // <div class="col-sm-2">
+            //     <button class="btn arrowBigger float-right"><i id="' . $id . '" style="font-size: 20pt" class="fas fa-angle-right mt-3"></i></button>
+            // </div>
         }
     }
 }

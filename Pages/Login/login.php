@@ -16,7 +16,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM Users WHERE username='$nomeUtilizador' AND password='" . md5($pw) . "'";
+$sql = "SELECT * FROM Users WHERE username='$nomeUtilizador' AND password='" . $pw . "'";
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
     $_SESSION['userName'] = $nomeUtilizador;

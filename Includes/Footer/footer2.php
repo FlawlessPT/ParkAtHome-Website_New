@@ -1,5 +1,5 @@
-<footer class="bg-secondary text-white py-4 mt-5">
-    <div class=" container">
+<footer class="footer bg-dark text-white py-4 mt-5">
+    <div class="container">
         <div class="row">
             <div class="col-sm-2">
                 <img class="py-auto float-sm-right" src="../../Assets/Icon/SVG/icon-solid.svg" width=80 alt="logo"><!-- SOLVED: Change for logo only (remove text) -->

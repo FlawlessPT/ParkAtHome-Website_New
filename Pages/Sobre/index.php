@@ -34,8 +34,8 @@
     <div class="container">
         <h1 class="mt-5">Sobre</h1>
         <p>Park@Home é uma aplicação para parques de estacionamento com o objetivo de ajudar, não só os gestores dos parque a
-            organizarem melhor os seus parques de estacionamento, mas também para ajudar as pessoas que frequentam os mesmos,
-            dando a possibilidade da pessoa efetuar a reserva de uma vaga a partir do telemóvel, pounpando assim tempo e dinheiro.
+            organizar melhor os seus parques de estacionamento, mas também para ajudar as pessoas que frequentam os mesmos,
+            dando a possibilidade de efetuar a reserva de uma vaga a partir do telemóvel, poupando assim tempo e dinheiro.
         </p>
         <hr class="border-dark">
         <h1>Contactos</h1>

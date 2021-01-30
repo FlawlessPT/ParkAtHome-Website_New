@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="utf-8">
@@ -19,12 +19,16 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="../../Includes/QuantumAlert/minfile/quantumalert.css" />
+    <script src="../../Includes/QuantumAlert/minfile/quantumalert.js"></script>
+
     <!-- OWN CSS -->
-    <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.2">
-    <link rel="stylesheet" href="styles.css?v=1.1">
+    <link rel="stylesheet" href="../../Includes/Menu/navbar.css?v=1.4">
+    <link rel="stylesheet" href="styles.css?v=1.3">
 
     <!-- PAGE FUNCTIONS -->
-    <script src="login.js?v=1.1"></script>
+    <script src="login.js?v=1.2"></script>
+
 </head>
 
 <body onload="hide()">
